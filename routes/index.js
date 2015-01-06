@@ -14,7 +14,10 @@ mongoose.connect('mongodb://walnut:wRYTYBWs06VKYNuHP0UP@ds027751.mongolab.com:27
 
 router.get('/nuts', function(req, res) {
 	mongoose.model('nuts').find(function(err,nuts){
+		for (var i = 0; i < nuts.length; i++){
+			mongoose.model('newnuts').insert
 		 res.send(nuts);
+		}
 	});	
 });
 
