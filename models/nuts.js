@@ -2,10 +2,8 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 // registering our nuts schema with mongoose
 
-var nutsSchema = new Schema({
-	 "_id": {
-        "$oid": Schema.ObjectId
-    },
+nutsSchema = new Schema({
+	 "_id": Schema.ObjectId,
 	"walnutID": String,
     "visibility": Boolean,
     "SirName": String,
@@ -26,4 +24,4 @@ var nutsSchema = new Schema({
     "Updated": Date
 });
 
-mongoose.model('nuts', nutsSchema);
+Nuts = mongoose.model('nuts', nutsSchema);

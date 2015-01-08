@@ -4,12 +4,11 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://walnut:wRYTYBWs06VKYNuHP0UP@ds027751.mongolab.com:27751/chestnuts');
- var db =  mongoose.connection;
- db.on('error', console.error.bind(console, 'connection error:'));
- db.once('open', function () {
-  var db = mongoose.connection;
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
   console.log("opened connection to mongolab chestnuts");
- }); 
 
 
 		router.get('/', function(req, res) {
@@ -18,11 +17,13 @@ mongoose.connect('mongodb://walnut:wRYTYBWs06VKYNuHP0UP@ds027751.mongolab.com:27
 		
 		router.get('/nuts', function(req, res) {
 			// mongoose.model('nuts').find(function(err,nuts){
-			 Nuts.find({}, function(err, docs){
-			 		if (err) { console.log(err)	};
+			 Nuts.find({}, {}, function(err, docs){
+			 		if (err) { console.log(err)
+			 			return false;
+			 		};
 			 		// console.log(typeof docs);
 			 		for (var i = 0; i < docs.length; i++) {
-			 			 // console.log(docs[i].walnutID);
+			 			// console.log(docs[0]);
 			 			// return;
 			 			var thisDoc = new Newnuts;
 		
@@ -55,30 +56,22 @@ mongoose.connect('mongodb://walnut:wRYTYBWs06VKYNuHP0UP@ds027751.mongolab.com:27
 		    				"Created": docs[i].Created,
 		    				"Updated": docs[i].Updated
 				 		}; /* thisDoc */
-				 		 // console.log(thisDoc);
-				 		 // return;
-				 		 //res.json(thisDoc);
-				 		 console.log(thisDoc.walnutID);
-				 			mongoose.model('Newnuts', newnutsSchema).update( {}, thisDoc, {upsert: true, multi: true}, function(err, numUpdated, status) {
-				 		 // thisDoc.save(function(err){
-				      	 if (err) {
-				        	console.log("Error here line 64 routes/index.js: " + err);
-				       	
-				       	   } else {
-   					    	console.log("succesfully saved a newnut: " + JSON.stringify(thisDoc.walnutID));  
-   					    							     			   		    
-				      	  }
-				      	 });				 				
-			 			
-		 			}; /* for */
+				 		// console.log(thisDoc);
+				 		// return;
+				 		thisDoc.save(function(err) {
+			 				console.log(err);
+			 			});
+			 		};  /* for */
+		 		});  /* find */
 		
-		
-				});   /* find */ 
 				res.send("ok, Finished creating newnuts collection"); 		     						       
 				console.log("Finished creating newnuts collection");
-});
+		
+				});   /* router get */ 
+		
+		module.exports = router;
+});		
 
-module.exports = router;
 
 			//  		{upsert: true}, {multi: true},{w:0}, function(error, numUpdated, status) {
 			//  	   		    if (!error) {

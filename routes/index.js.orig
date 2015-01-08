@@ -1,0 +1,84 @@
+var express = require('express');
+var router = express.Router();
+var mongoose = require('mongoose');
+
+// /* GET home page. */
+// router.get('/', function(req, res) {
+//   res.render('index', { title: 'Express' });
+// });
+mongoose.connect('mongodb://walnut:wRYTYBWs06VKYNuHP0UP@ds027751.mongolab.com:27751/chestnuts');
+ 
+ router.get('/', function(req, res) {
+ 	res.send('ok');
+ });
+
+router.get('/nuts', function(req, res) {
+	// mongoose.model('nuts').find(function(err,nuts){
+	Nuts.find({}, function(err, nuts) {
+			if (err) {
+				console.log("Error at line 19 routes/index.js: " + err)
+			}
+			for (var i = 0; i < nuts.length; i++) {
+				callback(nuts[i], function() {
+				console.log(err);
+					if (err){
+						return console.log("Error at line 25 routes/index.js: " + err)	;
+					} else {
+						console.log("Added doc num: ", i)	
+					}
+				});
+			}; /* for */ 
+		res.send("ok, Finished creating newnuts collection"); 
+		     						       
+		console.log("Finished creating newnuts collection");
+		});		/* find fxn */ 					
+
+	function callback(doc) {
+		
+				    mongoose.model('newnuts',newnutsSchema).update( {}, {
+					// "_id": doc[i]._id,
+
+					"walnutID": doc.walnutID,
+    				"visibility": doc.visibility,
+    				"SirName": doc.SirName,
+    				"Names": doc.Names,
+    				"FormalNames": doc.FormalNames,
+    				"Children": doc.Children,
+    				"Address" :
+      				[
+     					{"_id": 1, "Line"	: doc.Addr1},
+     					{"_id": 2, "Line"   : doc.Addr2},
+     					{"_id": 3, "Line"	: doc.Addr3},
+     					{"_id": 4, "Line"	: doc.Addr4}
+   	  				],
+					"Email"  : 
+	 				[  {"_id": 1, "Email"	: doc.Email1},
+	 				   {"_id": 2, "Email"	: doc.Email2},
+	 				   {"_id": 3, "Email"	: doc.Email3},
+	 				],
+					"Phone"  :
+					 [ 
+ 					   {"_id": 1,	"Phone"  : doc.Phone1},
+ 	   				   {"_id": 2,	"Phone"  : doc.Phone2}
+ 	  				],
+    				"Notes": doc.Notes,
+    				"Created": doc.Created,
+    				"Updated": doc.Updated
+					}, {upsert: true}, function(err, numUpdated, status) {
+				   		    if (err) {
+				   		    	console.log("Error here line 64 routes/index.js: " + err);
+				   		    	return false;
+				   		      } else {
+   						    	console.log("succesfully saved a newnut: " + numUpdated + " walnutID: " + doc.walnutID);  
+   						    	return true; 						     			   		    
+				   		   	 }					
+					});	/* Newnuts update */
+
+	}
+	
+}); /* router get /  */
+
+
+module.exports = router;
+
+	

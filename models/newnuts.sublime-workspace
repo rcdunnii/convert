@@ -1,0 +1,302 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"repository",
+				"Package Control: Add Repository"
+			],
+			[
+				"",
+				"Project: Add Folder"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Package ",
+				"PackageResourceViewer: Open Resource"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/G/node/tutorials/nodeAuth/app/routeNut.js",
+		"/G/node/tutorials/nodeAuth/views/addContact.html",
+		"/G/mongodb/convert.js",
+		"/G/node/tutorials/nodeAuth/views/main.ejs",
+		"/G/node/tutorials/nodeAuth/views/listNuts.ejs",
+		"/G/node/tutorials/nodeAuth/public/css/custom.css",
+		"/G/node/tutorials/nodeAuth/server.js",
+		"/G/node/tutorials/nodeAuth/mongolab shell info",
+		"/C/xampp/htdocs/walnuts/listNuts.html",
+		"/C/xampp/htdocs/walnuts/js/main.js",
+		"/G/node/tutorials/nodeAuth/public/js/main.js",
+		"/G/mongodb/walnuts/views/listNuts.html",
+		"/G/node/tutorials/nodeAuth/app/models/nut.js",
+		"/G/node/tutorials/nodeAuth/config/database.js",
+		"/G/node/tutorials/nodeAuth/views/listBdays.ejs",
+		"/G/node/tutorials/nodeAuth/app/models/bday.js",
+		"/G/node/tutorials/nodeAuth/views/signup.ejs",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/G/node/node_walnuts/listNuts.njs",
+		"/G/node/tutorials/test/views/index.jade",
+		"/G/node/tutorials/test/routes/index.js",
+		"/G/node/tutorials/nodeAuth/package.json",
+		"/G/node/tutorials/test/app.js",
+		"/G/node/tutorials/nodeAuth/config/auth.js",
+		"/G/node/tutorials/test/views/layout.jade",
+		"/G/node/tutorials/nodeAuth/views/index.ejs",
+		"/G/node/tutorials/nodeAuth/config/passport.js",
+		"/G/node/tutorials/nodeAuth/views/connect-local.ejs",
+		"/G/node/tutorials/nodeAuth/views/error.ejs",
+		"/G/node/tutorials/nodeAuth/app/models/user.js",
+		"/G/node/tutorials/nodeAuth/views/profile.ejs",
+		"/G/node/tutorials/nodeAuth/views/login.ejs",
+		"/D/mongodb/mongodb.config",
+		"/D/node/tutorials/nodeAuth/config/passport.js",
+		"/D/node/tutorials/nodeAuth/config/database.js",
+		"/D/xampp/htdocs/walnuts/css/main.css",
+		"/D/xampp/htdocs/walnuts/Walnuts.html",
+		"/D/node/tutorials/nodeAuth/server.js",
+		"/D/node/tutorials/nodeAuth/app/routeNut.js",
+		"/D/node/tutorials/nodeAuth/app/models/nut.js",
+		"/D/mongodb/walnuts/walnutapp.js",
+		"/D/node/tutorials/nodeAuth/views/listNuts.ejs",
+		"/C/Users/rcdunnii/.bashrc",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/D/node/tutorials/lynda/airline/flight/index.js",
+		"/D/node/tutorials/lynda/airline/app.js",
+		"/D/node/tutorials/lynda/rouxmeet/data.json",
+		"/D/node/tutorials/lynda/rouxmeet/app.js",
+		"/D/node/tutorials/lynda/rouxmeet/routes/index.js",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/template/footer.ejs",
+		"/D/Downloads/Monokai.tmTheme",
+		"/D/node/tutorials/lynda/rouxmeet/views/index.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/speakers.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/template/header.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/content/artworklist.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/content/getbusy.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/content/nextmeeting.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/content/socialmedia.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/content/speakerslist.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/content/whoarewe.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/partials/content/whoshouldcome.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/public/stylesheets/style.css",
+		"/D/xampp/htdocs/walnuts/walnutAction.php",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/D/node/tutorials/lynda/rouxmeet/views/template/head.ejs",
+		"/D/node/tutorials/lynda/rouxmeet/views/template/header.ejs",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/PackageResourceViewer/README.md",
+		"/D/node/tutorials/lynda/rouxmeet/views/template/jsdefaults.ejs",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/User/PackageResourceViewer.sublime-settings",
+		"/C/Users/rcdunnii/AppData/Local/Sublime Text 3/Cache/Theme - Default/Widgets.stTheme.cache",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/C/Users/rcdunnii/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/D/node/tutorials/lynda/routes/index.js",
+		"/D/node/tutorials/lynda/views/default.ejs",
+		"/D/node/tutorials/lynda/app.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"textarea",
+			";\n",
+			"mainMenu",
+			"send",
+			"searchData",
+			"alert",
+			"main",
+			"can",
+			"nuts",
+			"new Schema",
+			"mongoose.model",
+			"nuts",
+			"nut_id",
+			"auto_complete",
+			"main",
+			"walnutTable",
+			"route",
+			"model",
+			"module",
+			"export",
+			"exports",
+			"static",
+			"public",
+			"registeredPassword",
+			"-->	",
+			"vi",
+			"vim",
+			"nav",
+			"layout",
+			"navigation",
+			"layout",
+			"navigation",
+			"branding",
+			"layout",
+			"hero",
+			"footer",
+			"secondary",
+			"theme",
+			"match"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"bdays"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "newnuts.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
