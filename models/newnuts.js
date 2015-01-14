@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 // registering our nuts schema with mongoose
-
+/*
 newnutsSchema1 = new Schema({
 	 "_id": Schema.ObjectId,
 	"walnutID": String,
@@ -32,7 +32,9 @@ newnutsSchema1 = new Schema({
     "Updated": Date		
 });
 
-newnutsSchema2 = new Schema({
+ newnutsSchema2 = new Schema({*/
+    
+newnutsSchema = new Schema({    
      "_id": Schema.ObjectId,
     "walnutID": String,
     "visibility": Boolean,
@@ -40,32 +42,26 @@ newnutsSchema2 = new Schema({
     "Names": String,
     "FormalNames": String,
     "Children": String,
-    "Address" : {
-        {"_id": Schema.ObjectId},
-      [
-        
-        {"Line" : String},
-        {"Line" : String},
-        {"Line" : String},
-        {"Line" : String}
-      ]
-                },
-    "Email" : 
-     [ 
-        {"_id": Schema.ObjectId},
-        {"Email" : String},
-        {"Email" : String},
-        {"Email" : String},
-     ],
+    "Address" : 
+      [ {"_id": Schema.ObjectId},      
+        {"street_address": String,         
+         "city"          : String,
+         "state"         : String,
+         "country"       : String,
+         "zip"           : String
+       }
+      ],       
+    "Email" :
+      [ {"_id": Schema.ObjectId},      
+        {"Email" : String }              
+      ],
     "Phone"  :
-      [
-        {"_id": Schema.ObjectId},
-        {"Phone": String},
-        {"Phone": String}
+      [ {"_id": Schema.ObjectId},
+        {"Phone" : String}            
       ],
     "Notes": String,
     "Created": Date,
     "Updated": Date     
 });
-Newnuts1 = mongoose.model('newnuts1', newnutsSchema1);
-Newnuts2 = mongoose.model('newnuts2', newnutsSchema2);
+Newnuts = mongoose.model('newnuts', newnutsSchema);
+/* Newnuts2 = mongoose.model('newnuts2', newnutsSchema2); */
